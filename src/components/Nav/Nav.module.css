@@ -1,0 +1,23 @@
+.containerSearchBar{
+    display:flex;
+    /* justify-content: center; */
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 1em;
+    width: 80%;
+    margin:auto;
+    display:flex;
+    /* justify-content: flex-end; */
+    margin-top: 2em;
+    border-radius: 10px;
+ }
+
+ img{
+    height:12em;
+    flex:1 ;
+ }
+
+ .searchBar{
+    justify-self: flex-end;
+    align-self:center;
+    
+ }

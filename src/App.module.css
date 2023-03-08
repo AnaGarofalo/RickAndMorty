@@ -1,0 +1,39 @@
+.App {
+   
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   min-height: 39em;
+   
+   background-image: url("./fondo.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+   background-position:bottom right;
+  
+}
+
+.title{
+   
+   text-align: center;
+   font-family: 'Get Schwifty';
+   font-size: 6em;
+   color: #08BAE3;
+   -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+   margin-bottom: 1em;
+}
+
+
+
+hr{
+   width:80%;
+   color:rgba(0, 0, 0, 0);
+}
+
+.footer{
+   color:rgb(28, 94, 151);
+   text-align:center;
+   align-self:flex-end;
+   
+   font-size:10px;
+}
