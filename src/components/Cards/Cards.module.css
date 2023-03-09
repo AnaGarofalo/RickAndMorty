@@ -1,10 +1,11 @@
 .container{
     display:grid;
     grid-auto-columns: min-content;
-    grid-template-areas: "a a a a";
+    grid-template-areas: "a a a";
     grid-gap: 10px;
     margin-top: 3em;
-    margin-left:12%
+    margin-left:9%;
+    
     
 }
 

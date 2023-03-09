@@ -1,5 +1,9 @@
-import Cards from './components/Cards/Cards.jsx'
+import Home from "./components/Home/Home"
 import Nav from './components/Nav/Nav.jsx'
+import About from "./components/About/About"
+import Detail from "./components/Detail/Detail"
+import Error from "./components/Error/Error"
+import {Routes, Route} from "react-router-dom"
 import {useState} from 'react'
 
 import style from "./App.module.css"
@@ -31,16 +35,14 @@ function App () {
 
   return (
     <div className={style.App}>
-      
       <Nav onSearch={onSearch} characters={characters}/>
-      {/* <hr color="transparent"/> */}
-      <div>
-        <Cards
-          characters={characters}
-          onClose={onClose}
-        />
-      </div>
-      <hr color="transparent"/>
+      
+      <Routes>
+        <Route path="/home" element={<Home characters={characters} onClose={onClose}/>}></Route>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/detail/:detailId" element={<Detail/>}/>   
+        <Route path="*" element={<Error/>}/>
+      </Routes>
     </div>
   )
 }

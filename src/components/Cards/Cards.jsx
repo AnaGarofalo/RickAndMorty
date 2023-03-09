@@ -4,16 +4,17 @@ import style from "./Cards.module.css"
 export default function Cards(props) {
    const { characters} = props;
    const {onClose}=props
+   console.log(props)
    return (
       <div className={style.container}>
-         {characters.map((character)=>{
+         {characters.map(({image, name, species, gender, id})=>{
             return <Card 
-               image={character.image}
-               name={character.name}
-               species={character.species} 
-               gender={character.gender}
+               image={image}
+               name={name}
+               species={species} 
+               gender={gender}
                onClose={onClose}
-               id={character.id}
+               id={id}
                />
          })}
       </div>

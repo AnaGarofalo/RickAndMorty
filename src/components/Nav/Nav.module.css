@@ -1,23 +1,35 @@
-.containerSearchBar{
+.container{
     display:flex;
-    /* justify-content: center; */
+    flex-direction:row;
+    justify-content: space-between;    
     background-color: rgba(0, 0, 0, 0.801);
     padding: 1em;
     width: 80%;
-    margin:auto;
-    display:flex;
-    /* justify-content: flex-end; */
+    margin:auto;   
     margin-top: 2em;
     border-radius: 10px;
  }
 
- img{
-    height:12em;
-    flex:1 ;
+ .containerBotones{
+   display:flex;
+   flex-direction:row;
+   align-items: center;
+ }
+
+ .boton{
+   padding:1em;
+   font-size: 1.2em;
+   border: 0px;
+   background-color: rgba(0, 0, 0, 0);
+   color:rgb(253, 216, 2)
  }
 
  .searchBar{
     justify-self: flex-end;
     align-self:center;
     
+ }
+
+ .active{
+  background-color: red;
  }

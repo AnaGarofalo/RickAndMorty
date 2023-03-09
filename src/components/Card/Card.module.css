@@ -33,16 +33,20 @@ img{
     margin-left:15px;
     margin-right: 15px;
     margin-top:5px;
-    border-radius: 10px
+    border-radius: 10px;
+    /* width:100%; */
 }
 
 .nombre{
     position:absolute;
     bottom:2.5em;
-    left:35%;
-    right:35%;
+    left:10%;
+    /* right:35%; */
     color:rgb(253, 216, 2);
     -webkit-text-stroke: 2px black
+}
+.nombre:hover{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
 
 @media screen and (max-width: 1000px) {

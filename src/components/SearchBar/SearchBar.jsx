@@ -4,15 +4,20 @@ import {useState} from 'react'
 export default function SearchBar(props) {
    const [id, setId]= useState("")
    const handleChange=(event)=>{
-      setId(event.target.value)
+      setId(event.target.value,()=>{event.target.value=id})
    }
 
    const handleClick=()=>{
-      if(!props.characters.filter((character)=>character.id==id).length) props.onSearch(id)
+      // probar
+      if(!props.characters.find((character)=>character.id==id)) props.onSearch(id)
+      else window.alert("Ya hay un personaje con esa id")
+      // setId("")
+
    }
    const handleClickRandom=()=>{
       const random=Math.floor(Math.random() * 826)
-      if(!props.characters.filter((character)=>character.id==random).length) props.onSearch(random)
+      if(!props.characters.find((character)=>character.id==random)) props.onSearch(random)
+      else window.alert("Ya hay un personaje con esa id")
 
    }
 
