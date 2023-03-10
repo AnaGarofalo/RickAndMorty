@@ -4,11 +4,12 @@ import style from "./Cards.module.css"
 export default function Cards(props) {
    const { characters} = props;
    const {onClose}=props
-   console.log(props)
+   
    return (
       <div className={style.container}>
          {characters.map(({image, name, species, gender, id})=>{
             return <Card 
+               key={id}
                image={image}
                name={name}
                species={species} 

@@ -11,3 +11,11 @@
     border-radius: 10px;
     color:rgb(253, 216, 2);
 }
+
+@media screen and (max-width: 700px) {
+    .container{
+        flex-direction:column-reverse;
+        margin-top: 1em;
+        padding:3em;
+    }
+}
