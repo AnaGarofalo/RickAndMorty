@@ -44,3 +44,9 @@
     margin-bottom:0.5em;
 
 }
+
+.botonRandom:hover{
+    background-color:rgb(253, 216, 2, 0.6) ;
+    color:black;
+    border: 5px, solid, black;
+}

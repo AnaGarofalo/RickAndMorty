@@ -1,5 +1,5 @@
 import style from "./Form.module.css"
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import {validarUsername, validarPassword} from "./validation"
 
 function Form(props){
@@ -18,8 +18,8 @@ function Form(props){
         const property=event.target.name;
         const value=event.target.value;
         setUserData({...userData, [property]:value})
-        validarUsername({...userData, [property]:value}, setErrors, errors)
-        validarPassword({...userData, [property]:value}, setErrors, errors)
+        if (property==="username") validarUsername({...userData, [property]:value}, setErrors, errors)
+        if (property==="password") validarPassword({...userData, [property]:value}, setErrors, errors)
         
     }
 
@@ -43,7 +43,7 @@ function Form(props){
                     <input type="password" name="password" value={userData.password} onChange={handleChange} ></input>
                     <p>{errors.password}</p>
                 </div>
-                <button onClick={handleSubmit}>LOGIN</button>
+                <button className={style.boton} onClick={handleSubmit}>LOGIN</button>
             </form>
         </div>
 
