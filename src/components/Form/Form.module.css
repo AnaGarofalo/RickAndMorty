@@ -27,3 +27,23 @@
     color:black;
     border: 5px, solid, black;
 }
+
+.textoError{
+    font-size:10px;
+    
+}
+
+.inputError{
+    border-radius: 5px;
+    background-color:rgb(253, 216, 2, 0.6);
+    border:0px;
+    padding:5px;
+    color:rgb(136, 6, 6)
+}
+
+.input{
+    border-radius: 5px;
+    background-color:rgb(253, 216, 2, 0.6);
+    border:0px;
+    padding:5px;
+}

@@ -11,7 +11,7 @@ export default function SearchBar(props) {
       // probar
       if(!props.characters.find((character)=>character.id==id)) props.onSearch(id)
       else window.alert("Ya hay un personaje con esa id")
-      // setId("")
+      setId("")
 
    }
    const handleClickRandom=()=>{
@@ -24,7 +24,7 @@ export default function SearchBar(props) {
    return (
       <div className={style.container}>
          <div className={style.miniContainer}>
-            <input className={style.input} type='search' onChange={handleChange}  />
+            <input className={style.input} type='search' onChange={handleChange}  value={id} />
             <button className={style.boton} onClick={handleClick}>Agregar</button>
          </div>
          <button className={style.botonRandom} onClick={handleClickRandom}>Agregar aleatorio</button>

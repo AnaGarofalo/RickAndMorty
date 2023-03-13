@@ -32,18 +32,18 @@ function Form(props){
     return (
         
         <div className={style.container}>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="username">Username: </label>
-                    <input type="text" name="username" value={userData.username}  onChange={handleChange}></input>
-                    <p>{errors.username}</p>
+                    <input className={errors.username? style.inputError: style.input} type="text" name="username" value={userData.username}  onChange={handleChange}></input>
+                    <p className={style.textoError}>{errors.username}</p>
                 </div>
                 <div>
                     <label htmlFor="password">Password: </label>
-                    <input type="password" name="password" value={userData.password} onChange={handleChange} ></input>
-                    <p>{errors.password}</p>
+                    <input className={errors.password? style.inputError: style.input} type="password" name="password" value={userData.password} onChange={handleChange} ></input>
+                    <p className={style.textoError}>{errors.password}</p>
                 </div>
-                <button className={style.boton} onClick={handleSubmit}>LOGIN</button>
+                <button className={style.boton} type="submit">LOGIN</button>
             </form>
         </div>
 

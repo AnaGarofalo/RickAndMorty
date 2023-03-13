@@ -21,7 +21,22 @@
    font-size: 1.2em;
    border: 0px;
    background-color: rgba(0, 0, 0, 0);
-   color:rgb(253, 216, 2)
+   color:rgb(253, 216, 2);
+   text-decoration:underline;
+   text-decoration-line: none;
+   font-weight: bold;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .active{
+  padding:1em;
+   font-size: 1.2em;
+   border: 0px;
+   background-color: rgba(0, 0, 0, 0);
+   color:rgb(131, 112, 5);
+   text-decoration-line: none;
+   font-weight: bold;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
  .searchBar{
@@ -30,6 +45,16 @@
     
  }
 
- .active{
-  background-color: red;
- }
+ .botonLogout{
+  padding:1em;
+  font-size: 1.2em;
+  font-weight: bolder;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color:rgb(253, 216, 2);
+  text-decoration:underline;
+  text-decoration-line: none;
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
